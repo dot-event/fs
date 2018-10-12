@@ -1,0 +1,3 @@
+dist
+test/fixture/writeJson.json
+node_modules
