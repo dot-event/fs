@@ -15,6 +15,7 @@
   "homepage": "https://github.com/dot-store/fs#readme",
   "cyclops": {
     "git-tasks": {},
+    "link-tasks": {},
     "starter-tasks": {},
     "version-tasks": {}
   },
@@ -32,7 +33,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.2",
-    "fs-extra": "7.0.0"
+    "fs-extra": "7.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
