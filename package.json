@@ -1,5 +1,5 @@
 {
-  "name": "dot-file",
+  "name": "dot-fs-extra",
   "version": "1.6.0",
   "description": "dot-event filesystem operation",
   "keywords": [
@@ -10,10 +10,10 @@
   "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-event/file.git"
+    "url": "git+ssh://git@github.com/dot-event/fs.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-event/file#readme",
+  "homepage": "https://github.com/dot-event/fs#readme",
   "operations": {
     "git": {},
     "link": {},
@@ -74,7 +74,7 @@
       "@babel/plugin-transform-runtime"
     ]
   },
-  "main": "dist/file.js",
+  "main": "dist/fs.js",
   "scripts": {
     "build": "babel lib --out-dir dist --source-maps",
     "prepublishOnly": "rimraf dist; npm run build",

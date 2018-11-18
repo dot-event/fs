@@ -1,33 +1,5 @@
-# dot-file
+# dot-fs-extra
 
-Filesystem operations with `dot-store`.
+dot-event filesystem operation
 
-![beavis](https://media1.tenor.com/images/a65134d2c920a7d10312416c12ee1234/tenor.gif?itemid=7431307)
-
-## Install
-
-```bash
-npm install --save dot-event dot-store dot-file
-```
-
-## Usage
-
-```js
-import dotEvent from "dot-event"
-import dotStore from "dot-store"
-import fs from "dot-file"
-
-const events = dotEvent()
-const store = dotStore(events)
-
-fs({ events, store })
-
-const id = Math.random()
-const path = `${__dirname}/id.json`
-
-await events.fs("writeJson.test", { json: { id }, path })
-store.get("fs.writeJson.test").success // true
-
-await events.fs("readJson.test", { path })
-store.get("fs.readJson.test.id") // id
-```
+![files](https://i.embed.ly/1/image?url=https%3A%2F%2Fthumbs.gfycat.com%2FLinearEvenDrever-size_restricted.gif&key=b1e305db91cf4aa5a86b732cc9fffceb)
