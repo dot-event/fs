@@ -1,4 +1,4 @@
-# @dot-store/fs
+# dot-fs
 
 Filesystem operations with `dot-store`.
 
@@ -7,7 +7,7 @@ Filesystem operations with `dot-store`.
 ## Install
 
 ```bash
-npm install --save dot-event dot-store @dot-store/fs
+npm install --save dot-event dot-store dot-fs
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save dot-event dot-store @dot-store/fs
 ```js
 import dotEvent from "dot-event"
 import dotStore from "dot-store"
-import fs from "@dot-store/fs"
+import fs from "dot-fs"
 
 const events = dotEvent()
 const store = dotStore(events)

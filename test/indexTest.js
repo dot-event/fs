@@ -1,12 +1,13 @@
 import dotEvent from "dot-event"
 import dotStore from "dot-store"
-import fs from "../dist/fs"
+
+import dotFs from "../dist/fs"
 
 test("writeJson & readJson", async () => {
   const events = dotEvent()
   const store = dotStore(events)
 
-  fs({ events, store })
+  dotFs({ events, store })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
@@ -30,7 +31,7 @@ test("writeJson & storeReadJson", async () => {
   const events = dotEvent()
   const store = dotStore(events)
 
-  fs({ events, store })
+  dotFs({ events, store })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
@@ -54,7 +55,7 @@ test("writeJson & storeReadJson with props", async () => {
   const events = dotEvent()
   const store = dotStore(events)
 
-  fs({ events, store })
+  dotFs({ events, store })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`

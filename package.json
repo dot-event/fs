@@ -1,19 +1,20 @@
 {
-  "name": "@dot-store/fs",
+  "name": "dot-fs",
   "version": "1.6.0",
-  "description": "Filesystem operations with dot-store",
+  "description": "dot-event filesystem operation",
   "keywords": [
+    "dot-event",
     "fs",
-    "dot-store"
+    "operation"
   ],
-  "author": "dot-store <oss@dot-store.io>",
+  "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-store/fs.git"
+    "url": "git+ssh://git@github.com/dot-event/fs.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-store/fs#readme",
-  "cyclops": {
+  "homepage": "https://github.com/dot-event/fs#readme",
+  "operations": {
     "git": {},
     "link": {},
     "starter": {},
