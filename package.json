@@ -1,19 +1,19 @@
 {
-  "name": "dot-fs",
+  "name": "dot-file",
   "version": "1.6.0",
   "description": "dot-event filesystem operation",
   "keywords": [
     "dot-event",
-    "fs",
+    "filesystem",
     "operation"
   ],
   "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-event/fs.git"
+    "url": "git+ssh://git@github.com/dot-event/file.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-event/fs#readme",
+  "homepage": "https://github.com/dot-event/file#readme",
   "operations": {
     "git": {},
     "link": {},
@@ -74,7 +74,7 @@
       "@babel/plugin-transform-runtime"
     ]
   },
-  "main": "dist/fs.js",
+  "main": "dist/file.js",
   "scripts": {
     "build": "babel lib --out-dir dist --source-maps",
     "prepublishOnly": "rimraf dist; npm run build",
