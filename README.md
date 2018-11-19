@@ -1,4 +1,4 @@
-# dot-fs-extra
+# @dot-event/fs
 
 dot-event filesystem operation
 

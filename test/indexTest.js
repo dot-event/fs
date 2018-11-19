@@ -1,11 +1,11 @@
 import dotEvent from "dot-event"
-import dotStore from "dot-store"
+import dotStore from "@dot-event/store"
 
 import dotFs from "../dist/fs"
 
 test("writeJson & readJson", async () => {
   const events = dotEvent()
-  const store = dotStore(events)
+  const store = dotStore({ events })
 
   dotFs({ events, store })
 
@@ -29,7 +29,7 @@ test("writeJson & readJson", async () => {
 
 test("writeJson & storeReadJson", async () => {
   const events = dotEvent()
-  const store = dotStore(events)
+  const store = dotStore({ events })
 
   dotFs({ events, store })
 
@@ -53,7 +53,7 @@ test("writeJson & storeReadJson", async () => {
 
 test("writeJson & storeReadJson with props", async () => {
   const events = dotEvent()
-  const store = dotStore(events)
+  const store = dotStore({ events })
 
   dotFs({ events, store })
 
