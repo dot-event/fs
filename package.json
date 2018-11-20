@@ -1,6 +1,6 @@
 {
   "name": "@dot-event/fs",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "dot-event filesystem operation",
   "keywords": [
     "dot-event",
