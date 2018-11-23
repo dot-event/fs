@@ -12,14 +12,12 @@ test("writeJson & readJson", async () => {
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
 
-  await events.fs({
-    action: "writeJson",
+  await events.fsWriteJson({
     json: { id },
     path,
   })
 
-  const readOut = await events.fs({
-    action: "readJson",
+  const readOut = await events.fsReadJson({
     path,
   })
 
@@ -27,7 +25,7 @@ test("writeJson & readJson", async () => {
   expect(store.get("id")).not.toBe(id)
 })
 
-test("writeJson & storeReadJson", async () => {
+test("writeJson & readJson w/ save", async () => {
   const events = dotEvent()
   const store = dotStore({ events })
 
@@ -36,22 +34,21 @@ test("writeJson & storeReadJson", async () => {
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
 
-  await events.fs({
-    action: "writeJson",
+  await events.fsWriteJson({
     json: { id },
     path,
   })
 
-  const out = await events.fs({
-    action: "storeReadJson",
+  const out = await events.fsReadJson({
     path,
+    save: true,
   })
 
   expect(out.id).toBe(id)
   expect(store.get("id")).toBe(id)
 })
 
-test("writeJson & storeReadJson with props", async () => {
+test("writeJson & readJson w/ save & props", async () => {
   const events = dotEvent()
   const store = dotStore({ events })
 
@@ -60,15 +57,14 @@ test("writeJson & storeReadJson with props", async () => {
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
 
-  await events.fs("test", {
-    action: "writeJson",
+  await events.fsWriteJson("test", {
     json: { id },
     path,
   })
 
-  const out = await events.fs("test", {
-    action: "storeReadJson",
+  const out = await events.fsReadJson("test", {
     path,
+    save: true,
   })
 
   expect(out.id).toBe(id)

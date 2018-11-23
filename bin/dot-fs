@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const dotEvent = require("dot-event").default
+const dotStore = require("@dot-event/store").default
+const dotTask = require("@dot-event/task").default
+
+const dotFs = require("../dist/fs").default
+
+const events = dotEvent()
+const store = dotStore({ events })
+
+dotFs({ events, store })
+dotTask({ events, store })
+
+events
+  .task({
+    argv: process.argv.slice(2),
+    op: "fs",
+    path: process.cwd(),
+  })
+  .catch(function(e) {
+    console.error(e)
+    process.exit(1)
+  })
