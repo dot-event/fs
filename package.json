@@ -34,9 +34,10 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.2",
-    "@dot-event/store": "^5.9.0",
-    "@dot-event/task": "^1.10.0",
-    "dot-event": "^2.11.0",
+    "@dot-event/argv": "2.10.0",
+    "@dot-event/store": "5.9.0",
+    "@dot-event/task": "1.10.0",
+    "dot-event": "2.11.0",
     "fs-extra": "7.0.1"
   },
   "devDependencies": {
