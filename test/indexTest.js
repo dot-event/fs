@@ -5,9 +5,9 @@ import dotFs from "../dist/fs"
 
 test("writeJson & readJson", async () => {
   const events = dotEvent()
-  const store = dotStore({ events })
 
-  dotFs({ events, store })
+  dotFs({ events })
+  dotStore({ events })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
@@ -22,14 +22,14 @@ test("writeJson & readJson", async () => {
   })
 
   expect(readOut.id).toBe(id)
-  expect(store.get("id")).not.toBe(id)
+  expect(events.get("id")).not.toBe(id)
 })
 
 test("writeJson & readJson w/ save", async () => {
   const events = dotEvent()
-  const store = dotStore({ events })
 
-  dotFs({ events, store })
+  dotFs({ events })
+  dotStore({ events })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
@@ -45,14 +45,14 @@ test("writeJson & readJson w/ save", async () => {
   })
 
   expect(out.id).toBe(id)
-  expect(store.get("id")).toBe(id)
+  expect(events.get("id")).toBe(id)
 })
 
 test("writeJson & readJson w/ save & props", async () => {
   const events = dotEvent()
-  const store = dotStore({ events })
 
-  dotFs({ events, store })
+  dotFs({ events })
+  dotStore({ events })
 
   const id = Math.random()
   const path = `${__dirname}/fixture/writeJson.json`
@@ -68,5 +68,5 @@ test("writeJson & readJson w/ save & props", async () => {
   })
 
   expect(out.id).toBe(id)
-  expect(store.get("test.id")).toBe(id)
+  expect(events.get("test.id")).toBe(id)
 })
