@@ -1,7 +1,7 @@
 import dotEvent from "dot-event"
 import dotStore from "@dot-event/store"
 
-import dotFs from "../dist/fs"
+import dotFs from "../"
 
 test("writeJson & readJson", async () => {
   const events = dotEvent()
