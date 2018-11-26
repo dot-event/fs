@@ -37,7 +37,7 @@
     "@dot-event/argv": "2.10.2",
     "@dot-event/store": "6.0.1",
     "@dot-event/task": "1.11.3",
-    "dot-event": "2.12.1",
+    "dot-event": "2.12.2",
     "fs-extra": "7.0.1"
   },
   "devDependencies": {
