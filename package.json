@@ -17,6 +17,7 @@
   "operations": {
     "git": {},
     "link": {},
+    "spawn": {},
     "starter": {},
     "version": {}
   },
