@@ -1,6 +1,6 @@
 {
   "name": "@dot-event/fs",
-  "version": "1.11.6",
+  "version": "1.11.7",
   "description": "dot-event filesystem operation",
   "keywords": [
     "dot-event",
@@ -35,10 +35,10 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.5",
-    "@dot-event/argv": "2.10.5",
-    "@dot-event/store": "6.0.4",
-    "@dot-event/task": "1.11.7",
-    "dot-event": "2.12.5",
+    "@dot-event/argv": "2.10.6",
+    "@dot-event/store": "6.0.5",
+    "@dot-event/task": "1.11.8",
+    "dot-event": "2.12.6",
     "fs-extra": "7.0.1",
     "tmp-promise": "1.0.5"
   },
