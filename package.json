@@ -37,7 +37,7 @@
     "@babel/runtime": "7.1.5",
     "@dot-event/argv": "2.10.6",
     "@dot-event/store": "6.0.5",
-    "@dot-event/task": "1.11.8",
+    "@dot-event/task": "1.11.9",
     "dot-event": "2.12.6",
     "fs-extra": "7.0.1",
     "js-yaml": "3.12.0",
